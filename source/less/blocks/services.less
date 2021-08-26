@@ -1,10 +1,14 @@
+.services__wrapper {
+    margin-bottom: 76px;
+}
+
 .services__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .services__title {
+    position: relative;
     font-family: @Open;
     font-size: 18px;
     font-style: normal;
@@ -15,6 +19,17 @@
     color: @dark;
     margin-right: 155px;
     white-space:nowrap;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #00A4E5;
+        top: 35px;
+        left: 0;
+    }
 }
 
 .services__text {
