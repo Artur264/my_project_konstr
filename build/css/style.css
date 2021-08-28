@@ -34,12 +34,17 @@
 }
 .header__startscreen {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .header__logo {
   margin-top: 41px;
   margin-bottom: 317px;
   margin-left: 418px;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header__title {
   font-family: 'Bebas Neue';
@@ -50,7 +55,6 @@
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 21px;
-  margin-left: 184px;
   max-width: 576px;
 }
 .header__text {
@@ -62,7 +66,6 @@
   letter-spacing: 0px;
   text-align: center;
   color: #FFFFFF;
-  margin-left: 277px;
   margin-bottom: 221px;
 }
 .header__scroll {
@@ -74,8 +77,6 @@
   letter-spacing: 3.70000005px;
   text-align: center;
   color: #FFFFFF;
-  margin-left: 410px;
-  margin-bottom: 20px;
   margin-bottom: 71px;
 }
 .header__bot {
@@ -100,6 +101,10 @@
   margin: 0;
   border: 0;
 }
+.about__top {
+  display: flex;
+  justify-content: center;
+}
 .about__title {
   position: relative;
   font-family: 'Open Sans';
@@ -112,7 +117,6 @@
   color: #48555B;
   white-space: nowrap;
   max-width: 121px;
-  margin-left: 393px;
   margin-bottom: 92px;
 }
 .about__title::before {
@@ -264,8 +268,9 @@
   cursor: pointer;
   opacity: 0.7;
 }
-.work__wrapper {
+.work__content {
   display: flex;
+  margin-bottom: 120px;
 }
 .work__project {
   padding-top: 38px;
@@ -370,6 +375,11 @@
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.down__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 120px;
   padding-bottom: 231px;
 }
@@ -382,9 +392,8 @@
   letter-spacing: 0.15000001px;
   text-align: center;
   color: #48555B;
-  margin-left: 295px;
   margin-bottom: 35px;
-  width: 350px;
+  max-width: 350px;
 }
 .down__btn {
   font-family: 'Open Sans';
@@ -397,7 +406,6 @@
   color: #FFFFFF;
   background-color: #00A4E5;
   padding: 11px 26px;
-  margin-left: 395px;
 }
 .down__btn:hover {
   cursor: pointer;
@@ -408,6 +416,7 @@
 }
 .signup__content {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -421,7 +430,6 @@
   letter-spacing: 0.84615391px;
   text-align: center;
   color: #FFFFFF;
-  margin-left: 128px;
   margin-right: 70px;
 }
 .signup__form-input {
@@ -567,9 +575,6 @@
 .contact__blog-link:hover {
   color: #00a4e5;
 }
-.contact__info {
-  margin-right: 46px;
-}
 .contact__info-text {
   font-family: 'Open Sans';
   font-size: 11px;
@@ -646,6 +651,8 @@
   background-color: #171819;
 }
 .footer__info {
+  display: flex;
+  justify-content: center;
   padding-top: 22px;
   padding-bottom: 23px;
 }
@@ -661,5 +668,4 @@
   list-style: none;
   color: #FFFFFF;
   align-items: center;
-  margin-left: 321px;
 }
