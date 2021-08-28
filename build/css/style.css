@@ -366,7 +366,7 @@
   width: 250px;
 }
 .down {
-  background-image: url(../../img/downbg.png);
+  background-image: url(../img/downbg.png);
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
