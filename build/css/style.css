@@ -88,9 +88,9 @@
 }
 .wrapper {
   width: 100%;
-  max-width: 1440px;
-  padding-left: 250px;
-  padding-right: 250px;
+  max-width: 960px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -260,12 +260,16 @@
   padding-left: 29px;
   white-space: nowrap;
 }
+.services__btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .work__wrapper {
   display: flex;
 }
 .work__project {
   padding-top: 38px;
-  padding-right: 22px;
+  padding-right: 17px;
   padding-bottom: 39px;
   padding-left: 23px;
   border: 1px solid #E6E6E6;
@@ -298,7 +302,7 @@
 }
 .work__audit {
   padding-top: 38px;
-  padding-right: 22px;
+  padding-right: 16px;
   padding-bottom: 39px;
   padding-left: 23px;
   border: 1px solid #E6E6E6;
@@ -331,7 +335,7 @@
 }
 .work__factory {
   padding-top: 38px;
-  padding-right: 22px;
+  padding-right: 16px;
   padding-bottom: 39px;
   padding-left: 23px;
   border: 1px solid #E6E6E6;
@@ -364,7 +368,7 @@
 .down {
   background-image: url(../../img/downbg.png);
   background-position: 50%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 120px;
   padding-bottom: 231px;
@@ -395,15 +399,18 @@
   padding: 11px 26px;
   margin-left: 395px;
 }
-.signup__wrapper {
-  position: relative;
+.down__btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.signup {
   background-color: #171819;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  top: -16px;
+}
+.signup__content {
   display: flex;
   align-items: center;
-  max-width: 1437px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .signup__title {
   font-family: 'Open Sans';
@@ -435,18 +442,12 @@
   padding: 10px 49px;
 }
 .contact {
-  height: 238px;
-}
-.contact__wrapper {
-  position: relative;
-  top: -17px;
   background-color: #141A20;
-  padding-top: 42px;
-  padding-bottom: 39px;
-  max-width: 1437px;
 }
 .contact__content {
   display: flex;
+  padding-top: 42px;
+  padding-bottom: 39px;
 }
 .contact__company {
   margin-right: 71px;
@@ -641,9 +642,8 @@
 .header__navigation-item05 {
   margin-right: auto;
 }
-.footer_wrapper {
+.footer {
   background-color: #171819;
-  max-width: 1436px;
 }
 .footer__info {
   padding-top: 22px;
